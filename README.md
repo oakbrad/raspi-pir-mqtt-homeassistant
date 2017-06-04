@@ -10,6 +10,7 @@ Instructions:
 In Home Assistant, using the MQTT Binary Sensor component:
 https://home-assistant.io/components/binary_sensor.mqtt/
 
+```yaml
 binary_sensor:
   - platform: mqtt
     state_topic: "CHANNEL/Motion/Switch"
@@ -17,3 +18,4 @@ binary_sensor:
     payload_on: "1"
     payload_off: "0"
     name: "Motion Sensor"
+```
